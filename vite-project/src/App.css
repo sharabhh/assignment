@@ -1,0 +1,149 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+.container{
+  display: flex;
+  height: 100vh;
+  /* padding-top: 10px; */
+}
+
+.left--portion{
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.social--media{
+  display: flex;
+}
+.social--media span{
+  background-color: #3ab297;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 5px;
+  margin: 0.5rem 0.5rem;
+  border-radius: 50%;
+  color: white;
+}
+
+#fb{
+  background-color: #444e6f;
+}
+
+#gplus{
+  background-color: #da4f3f;
+}
+#in{
+  background-color: #49536d;
+}
+
+h6{
+  width: 80%;
+  text-align: center;
+  border-bottom: 1px solid #eaf1f1;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+  padding: 0 0px;
+  color: gray;
+}
+
+h6 span { 
+  background:#fff; 
+  padding:0 10px; 
+}
+
+.form--elements{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 35%;
+}
+.form--elements input,button{
+  border: none;
+  padding: 10px 15px;
+  background-color: #eaf1f1;
+  /* height: 2rem; */
+  border-radius: 15rem;
+  width: 100%;
+  margin-top: 1rem;
+}
+.form--elements input:active{
+  border: none;
+}
+
+.form--elements button{
+  width: 50%;
+  padding: 10px 15px;
+  background-color: #3eb19f;
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+  
+}
+
+.right--portion{
+  width: 30%;
+  height: 100%;
+  background-color: #3ab297;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.right--portion button{
+  background-color: white;
+  color: black;
+  width: 50%;
+  box-shadow: 5px 10px #6ba59e;
+}
+
+@media only screen and ( max-width: 1457px ){
+  .form--elements{
+    width: 55%;
+  }
+  .right--portion button{
+    width: 27%;
+  }
+}
+
+
+@media only screen and ( max-width: 990px ){
+  .container{
+    flex-direction: column;
+    padding-top: 50px;
+  }
+  .left--portion{
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+  .right--portion{
+    width: 100%;
+  }
+}
+
+@media only screen and ( max-width: 400px){
+  .left--portion h1{
+    font-size: 1.7rem;
+  }
+}
+
+@media only screen and ( max-width: 300px ){
+  .left--portion h1{
+    text-align: center;
+  }
+  .form--elements button{
+    width: 100%
+  }
+  .right--portion button{
+    width: 50%;
+  }
+}
